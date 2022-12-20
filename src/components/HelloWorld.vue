@@ -1,10 +1,14 @@
 <script setup>
+import {QueryEngine} from "@comunica/query-sparql-solid";
+
 defineProps({
   msg: {
     type: String,
     required: true
   }
 })
+
+const engine = new QueryEngine()
 </script>
 
 <template>
